@@ -84,3 +84,6 @@ show_bigrams(bigrams)
 
 # Generating a random sentence and displaying the probability
 generate_random(unigrams, bigrams)
+
+# Example of a non-zero result
+show_result("season", "of", "an", "arch-duchess", bigrams)
