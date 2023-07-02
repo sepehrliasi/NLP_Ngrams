@@ -14,6 +14,7 @@ def create_unigrams(words):
 
 
 def show_unigrams(unigrams):
+    print("Unigrams:")
     print(unigrams)
 
 
@@ -33,6 +34,8 @@ def create_bigrams(unigrams):
 
 
 def show_bigrams(bigrams):
+    print("")
+    print("Bigrams:")
     print(bigrams)
 
 
@@ -45,6 +48,7 @@ def generate_random(unigrams, bigrams):
 
 
 def show_result(word1, word2, word3, word4, bigrams):
+    print("")
     print("P(" + word1 + " " + word2 + " " + word3 + " " + word4 + ") = P(" + 
         word2 + "|" + word1 + ") * P(" + 
         word3 + "|" + word2 + ") * P(" +
@@ -70,10 +74,7 @@ words = [word.lower() for word in words]
 unigrams = create_unigrams(words)
 show_unigrams(unigrams)
 
-
-
 bigrams = create_bigrams(unigrams)
-
 show_bigrams(bigrams)
 
-
+generate_random(unigrams, bigrams)
